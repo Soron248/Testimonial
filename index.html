@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial</title>
+</head>
+<body>
+    <div class="testl">
+        <h1>Testimonial</h1>
+
+        <div class="testimonial">
+            <div class="main" id="slide">
+                <div class="col" id="a">
+                    <div class="txt">
+                        <p>Divines a parce ce de faite. Dit au comme dit sur parce d'un. Ce promettant visage apres-demain nous a. Dont exquise ses que éclairé encore, air grâces l'amour encore se la les, divinement grâces la.</p>
+                        <h3>SORON</h3>
+                        <p>WEB-DEV</p>
+                    </div>
+    
+                    <div class="img">
+                        <img src="srn.jpg" alt="">
+                    </div>
+                </div>
+    
+                <div class="col" id="b">
+                        <div class="txt">
+                            <p>Ora sí suo benignita cosí che quale procuratore che nostra, tal alla sí noia se sé pregato alla come. Avvedimento maesta e e principio di lui beato. Ma della potremmo.</p>
+                            <h3>SEZAN</h3>
+                            <p>PROGRAMMER</p>
+                        </div>
+        
+                        <div class="img">
+                            <img src="szn.jpg" alt="">
+                        </div>
+                </div>
+    
+                <div class="col" id="c">
+                        <div class="txt">
+                            <p></p>Lispelnd sich der dem folgt denen steigt noch, so ihr des lebt wohl auf mild, der bilder seelen und sich, nun hinweggeschwunden herz die den. Zug der faßt wirklichkeiten besitze.
+                            <h3>NASH</h3>
+                            <p>DESIGNER</p>
+                        </div>
+        
+                        <div class="img">
+                            <img src="nash.jpg" alt="">
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="crl">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div>
+
+    <script>
+        let btn = document.getElementsByClassName("dot");
+        let slide = document.getElementById("slide");
+
+        btn[0].onclick = function(){
+            slide.style.transform = "translateX(0px)";
+            for(i=0; i<3; i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[1].onclick = function(){
+            slide.style.transform = "translateX(-700px)";
+            for(i=0; i<3; i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[2].onclick = function(){
+            slide.style.transform = "translateX(-1400px)";
+            for(i=0; i<3; i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+    </script>
+</body>
+</html>
